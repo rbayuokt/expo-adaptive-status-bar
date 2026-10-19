@@ -1,0 +1,91 @@
+{
+  "name": "@rbayuokt/expo-adaptive-status-bar",
+  "version": "0.1.0",
+  "description": "Status bar icons that follow the content underneath them. Native sampling on Android and iOS picks light or dark icons for whatever is behind the status bar, with no per-screen setup.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "node internal/module_scripts/build.js",
+    "clean": "node internal/module_scripts/clean.js",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "test": "node internal/module_scripts/test.js",
+    "test:unit": "CI=1 jest",
+    "test:ios": "sh internal/scripts/test-ios-core.sh",
+    "test:android": "sh internal/scripts/test-android-core.sh",
+    "test:full": "npm run typecheck && npm run lint && npm run test:unit && npm run test:ios && npm run test:android",
+    "example:ios": "npm install --prefix example && npm --prefix example run ios",
+    "example:android": "npm install --prefix example && npm --prefix example run android",
+    "prepare": "node internal/module_scripts/prepare.js",
+    "open:ios": "node internal/module_scripts/open-ios.js",
+    "open:android": "node internal/module_scripts/open-android.js",
+    "docs:graphics": "node internal/scripts/docs-graphics.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-modules",
+    "status bar",
+    "statusbar",
+    "status bar style",
+    "adaptive",
+    "edge-to-edge",
+    "luminance",
+    "contrast",
+    "ios",
+    "android"
+  ],
+  "repository": "https://github.com/rbayuokt/expo-adaptive-status-bar",
+  "bugs": {
+    "url": "https://github.com/rbayuokt/expo-adaptive-status-bar/issues"
+  },
+  "author": "rbayuokt <rizkybayuoktavian@gmail.com> (https://github.com/rbayuokt)",
+  "license": "MIT",
+  "homepage": "https://github.com/rbayuokt/expo-adaptive-status-bar#readme",
+  "files": [
+    "build",
+    "src",
+    "!src/__tests__",
+    "android/build.gradle",
+    "android/src/main",
+    "ios",
+    "!ios/Tests",
+    "app.plugin.js",
+    "expo-module.config.json"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.2.1",
+    "@types/react": "~19.2.2",
+    "eslint": "~9.39.4",
+    "eslint-config-universe": "^15.0.3",
+    "expo": "^58.0.14",
+    "jest": "^29.7.0",
+    "jest-expo": "~58.0.0",
+    "prettier": "^3.0.0",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "typescript": "^5.9.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
+    },
+    "./app.plugin.js": "./app.plugin.js",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

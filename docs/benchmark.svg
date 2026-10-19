@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1130" viewBox="0 0 1600 1130" font-family="-apple-system, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif">
+<rect width="1600" height="1130" fill="#0B0B0F"/>
+<text x="48" y="64" fill="#7C8CFF" font-size="13" font-weight="700" text-anchor="start" letter-spacing="2.4">BENCHMARK</text>
+<text x="48" y="104" fill="#F4F4F6" font-size="34" font-weight="800" text-anchor="start" letter-spacing="-0.8">Library off vs on, six scenarios</text>
+<text x="48" y="136" fill="#9C9CA8" font-size="16" font-weight="400" text-anchor="start">Release builds, balanced preset, 10 s per phase. The OPPO is a real low-end phone, the others are a simulator and an emulator.</text>
+<rect x="48" y="166" width="14" height="14" rx="4" fill="#6C7CF5"/>
+<text x="70" y="178" fill="#9C9CA8" font-size="14" font-weight="400" text-anchor="start">iPhone 16 Pro sim · iOS 18.6</text>
+<rect x="318.79999999999995" y="166" width="14" height="14" rx="4" fill="#C9841C"/>
+<text x="340.79999999999995" y="178" fill="#9C9CA8" font-size="14" font-weight="400" text-anchor="start">Pixel 9 Pro XL emulator · Android 16</text>
+<rect x="650.3999999999999" y="166" width="14" height="14" rx="4" fill="#1FA67E"/>
+<text x="672.3999999999999" y="178" fill="#9C9CA8" font-size="14" font-weight="400" text-anchor="start">OPPO CPH2217 · low-end · Android 13</text>
+<rect x="48" y="206" width="488" height="132" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="76" y="268" fill="#F4F4F6" font-size="40" font-weight="800" text-anchor="start" letter-spacing="-1">0</text>
+<text x="76" y="298" fill="#F4F4F6" font-size="15" font-weight="600" text-anchor="start">slow UI frames on a low-end phone</text>
+<text x="76" y="320" fill="#9C9CA8" font-size="13" font-weight="400" text-anchor="start">OPPO CPH2217, all six scenarios, library on</text>
+<rect x="556" y="206" width="488" height="132" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="584" y="268" fill="#F4F4F6" font-size="40" font-weight="800" text-anchor="start" letter-spacing="-1">27 ms</text>
+<text x="584" y="298" fill="#F4F4F6" font-size="15" font-weight="600" text-anchor="start">median switch on the low-end phone</text>
+<text x="584" y="320" fill="#9C9CA8" font-size="13" font-weight="400" text-anchor="start">flip to style event · iOS 18.6 sim: 185 ms</text>
+<rect x="1064" y="206" width="488" height="132" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="1092" y="268" fill="#F4F4F6" font-size="40" font-weight="800" text-anchor="start" letter-spacing="-1">0 per second</text>
+<text x="1092" y="298" fill="#F4F4F6" font-size="15" font-weight="600" text-anchor="start">samples on a still Android screen</text>
+<text x="1092" y="320" fill="#9C9CA8" font-size="13" font-weight="400" text-anchor="start">iOS backs off to about one per second</text>
+<rect x="48" y="362" width="860" height="690" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="76" y="406" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">SAMPLING RATE</text>
+<text x="76" y="436" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Samples per second, library on</text>
+<line x1="266" x2="266" y1="466" y2="1016" stroke="rgba(255,255,255,0.07)"/>
+<text x="266" y="1038" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">0</text>
+<line x1="378.8" x2="378.8" y1="466" y2="1016" stroke="rgba(255,255,255,0.07)"/>
+<text x="378.8" y="1038" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">2</text>
+<line x1="491.6" x2="491.6" y1="466" y2="1016" stroke="rgba(255,255,255,0.07)"/>
+<text x="491.6" y="1038" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">4</text>
+<line x1="604.4" x2="604.4" y1="466" y2="1016" stroke="rgba(255,255,255,0.07)"/>
+<text x="604.4" y="1038" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">6</text>
+<line x1="717.2" x2="717.2" y1="466" y2="1016" stroke="rgba(255,255,255,0.07)"/>
+<text x="717.2" y="1038" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">8</text>
+<line x1="830" x2="830" y1="466" y2="1016" stroke="rgba(255,255,255,0.07)"/>
+<text x="830" y="1038" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">10</text>
+<text x="76" y="506" fill="#F4F4F6" font-size="14" font-weight="400" text-anchor="start">Static dark photo</text>
+<path d="M266 480 H329.68 Q333.68 480 333.68 484 V492 Q333.68 496 329.68 496 H266 Z" fill="#6C7CF5"/>
+<text x="341.68" y="492.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">1.2</text>
+
+<text x="274" y="512.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">0.0</text>
+
+<text x="274" y="532.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">0.0</text>
+<text x="76" y="598" fill="#F4F4F6" font-size="14" font-weight="400" text-anchor="start">Static light photo</text>
+<path d="M266 572 H329.68 Q333.68 572 333.68 576 V584 Q333.68 588 329.68 588 H266 Z" fill="#6C7CF5"/>
+<text x="341.68" y="584.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">1.2</text>
+
+<text x="274" y="604.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">0.0</text>
+
+<text x="274" y="624.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">0.0</text>
+<text x="76" y="690" fill="#F4F4F6" font-size="14" font-weight="400" text-anchor="start">Continuous scroll</text>
+<path d="M266 664 H701.9200000000001 Q705.9200000000001 664 705.9200000000001 668 V676 Q705.9200000000001 680 701.9200000000001 680 H266 Z" fill="#6C7CF5"/>
+<text x="713.9200000000001" y="676.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">7.8</text>
+<path d="M266 684 H763.96 Q767.96 684 767.96 688 V696 Q767.96 700 763.96 700 H266 Z" fill="#C9841C"/>
+<text x="775.96" y="696.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">8.9</text>
+<path d="M266 704 H724.48 Q728.48 704 728.48 708 V716 Q728.48 720 724.48 720 H266 Z" fill="#1FA67E"/>
+<text x="736.48" y="716.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">8.2</text>
+<text x="76" y="782" fill="#F4F4F6" font-size="14" font-weight="400" text-anchor="start">Animated gradient</text>
+<path d="M266 756 H730.1200000000001 Q734.1200000000001 756 734.1200000000001 760 V768 Q734.1200000000001 772 730.1200000000001 772 H266 Z" fill="#6C7CF5"/>
+<text x="742.1200000000001" y="768.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">8.3</text>
+<path d="M266 776 H758.32 Q762.32 776 762.32 780 V788 Q762.32 792 758.32 792 H266 Z" fill="#C9841C"/>
+<text x="770.32" y="788.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">8.8</text>
+<path d="M266 796 H763.96 Q767.96 796 767.96 800 V808 Q767.96 812 763.96 812 H266 Z" fill="#1FA67E"/>
+<text x="775.96" y="808.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">8.9</text>
+<text x="76" y="874" fill="#F4F4F6" font-size="14" font-weight="400" text-anchor="start">Photo every second</text>
+<path d="M266 848 H487.6 Q491.6 848 491.6 852 V860 Q491.6 864 487.6 864 H266 Z" fill="#6C7CF5"/>
+<text x="499.6" y="860.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">4.0</text>
+<path d="M266 868 H369.15999999999997 Q373.15999999999997 868 373.15999999999997 872 V880 Q373.15999999999997 884 369.15999999999997 884 H266 Z" fill="#C9841C"/>
+<text x="381.15999999999997" y="880.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">1.9</text>
+<path d="M266 888 H374.8 Q378.8 888 378.8 892 V900 Q378.8 904 374.8 904 H266 Z" fill="#1FA67E"/>
+<text x="386.8" y="900.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">2.0</text>
+<text x="76" y="966" fill="#F4F4F6" font-size="14" font-weight="400" text-anchor="start">Black / white flips</text>
+<path d="M266 940 H481.96000000000004 Q485.96000000000004 940 485.96000000000004 944 V952 Q485.96000000000004 956 481.96000000000004 956 H266 Z" fill="#6C7CF5"/>
+<text x="493.96000000000004" y="952.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">3.9</text>
+<path d="M266 960 H363.52 Q367.52 960 367.52 964 V972 Q367.52 976 363.52 976 H266 Z" fill="#C9841C"/>
+<text x="375.52" y="972.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">1.8</text>
+<path d="M266 980 H363.52 Q367.52 980 367.52 984 V992 Q367.52 996 363.52 996 H266 Z" fill="#1FA67E"/>
+<text x="375.52" y="992.5" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">1.8</text>
+<rect x="928" y="362" width="624" height="250" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="956" y="406" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">REACTION</text>
+<text x="956" y="436" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Switch latency, median and max</text>
+<line x1="956" x2="1414" y1="475" y2="475" stroke="rgba(255,255,255,0.07)"/>
+<path d="M956 466 H1163.825 Q1167.825 466 1167.825 470 V480 Q1167.825 484 1163.825 484 H956 Z" fill="#6C7CF5"/>
+<line x1="1167.825" x2="1330.415" y1="475" y2="475" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1330.415" x2="1330.415" y1="463" y2="487" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="1428" y="480" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">185 / 327 ms</text>
+<line x1="956" x2="1414" y1="519" y2="519" stroke="rgba(255,255,255,0.07)"/>
+<path d="M956 510 H984.06 Q988.06 510 988.06 514 V524 Q988.06 528 984.06 528 H956 Z" fill="#C9841C"/>
+<line x1="988.06" x2="993.785" y1="519" y2="519" stroke="#C9841C" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="993.785" x2="993.785" y1="507" y2="531" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="1428" y="524" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">28 / 33 ms</text>
+<line x1="956" x2="1414" y1="563" y2="563" stroke="rgba(255,255,255,0.07)"/>
+<path d="M956 554 H982.915 Q986.915 554 986.915 558 V568 Q986.915 572 982.915 572 H956 Z" fill="#1FA67E"/>
+<line x1="986.915" x2="990.35" y1="563" y2="563" stroke="#1FA67E" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="990.35" x2="990.35" y1="551" y2="575" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="1428" y="568" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">27 / 30 ms</text>
+<text x="956" y="594" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">bar = median, tick = max, black/white flips every 1.2 s</text>
+<rect x="928" y="632" width="624" height="420" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="956" y="676" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">COST</text>
+<text x="956" y="706" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">iOS capture per sample, ms</text>
+<line x1="1106" x2="1106" y1="726" y2="982" stroke="rgba(255,255,255,0.07)"/>
+<text x="1106" y="1000" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">0</text>
+<line x1="1228.6666666666667" x2="1228.6666666666667" y1="726" y2="982" stroke="rgba(255,255,255,0.07)"/>
+<text x="1228.6666666666667" y="1000" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">0.5</text>
+<line x1="1351.3333333333333" x2="1351.3333333333333" y1="726" y2="982" stroke="rgba(255,255,255,0.07)"/>
+<text x="1351.3333333333333" y="1000" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">1</text>
+<line x1="1474" x2="1474" y1="726" y2="982" stroke="rgba(255,255,255,0.07)"/>
+<text x="1474" y="1000" fill="#5E5E6A" font-size="12" font-weight="400" text-anchor="middle">1.5</text>
+<text x="956" y="752" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start">Static dark photo</text>
+<path d="M1106 740 H1271.28 Q1275.28 740 1275.28 744 V748 Q1275.28 752 1271.28 752 H1106 Z" fill="#6C7CF5"/>
+<line x1="1275.28" x2="1424.9333333333334" y1="746" y2="746" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1424.9333333333334" x2="1424.9333333333334" y1="740" y2="752" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="956" y="796" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start">Static light photo</text>
+<path d="M1106 784 H1281.0933333333332 Q1285.0933333333332 784 1285.0933333333332 788 V792 Q1285.0933333333332 796 1281.0933333333332 796 H1106 Z" fill="#6C7CF5"/>
+<line x1="1285.0933333333332" x2="1302.2666666666667" y1="790" y2="790" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1302.2666666666667" x2="1302.2666666666667" y1="784" y2="796" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="956" y="840" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start">Continuous scroll</text>
+<path d="M1106 828 H1165.7866666666666 Q1169.7866666666666 828 1169.7866666666666 832 V836 Q1169.7866666666666 840 1165.7866666666666 840 H1106 Z" fill="#6C7CF5"/>
+<line x1="1169.7866666666666" x2="1253.2" y1="834" y2="834" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1253.2" x2="1253.2" y1="828" y2="840" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="956" y="884" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start">Animated gradient</text>
+<path d="M1106 872 H1146.16 Q1150.16 872 1150.16 876 V880 Q1150.16 884 1146.16 884 H1106 Z" fill="#6C7CF5"/>
+<line x1="1150.16" x2="1179.6" y1="878" y2="878" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1179.6" x2="1179.6" y1="872" y2="884" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="956" y="928" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start">Photo every second</text>
+<path d="M1106 916 H1295.8133333333333 Q1299.8133333333333 916 1299.8133333333333 920 V924 Q1299.8133333333333 928 1295.8133333333333 928 H1106 Z" fill="#6C7CF5"/>
+<line x1="1299.8133333333333" x2="1424.9333333333334" y1="922" y2="922" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1424.9333333333334" x2="1424.9333333333334" y1="916" y2="928" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="956" y="972" fill="#F4F4F6" font-size="13" font-weight="400" text-anchor="start">Black / white flips</text>
+<path d="M1106 960 H1143.7066666666667 Q1147.7066666666667 960 1147.7066666666667 964 V968 Q1147.7066666666667 972 1143.7066666666667 972 H1106 Z" fill="#6C7CF5"/>
+<line x1="1147.7066666666667" x2="1179.6" y1="966" y2="966" stroke="#6C7CF5" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="1179.6" x2="1179.6" y1="960" y2="972" stroke="#F4F4F6" stroke-width="2" stroke-linecap="round"/>
+<text x="956" y="1034" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">bar = average, tick = max · luminance analysis adds 2 to 4 µs</text>
+<text x="48" y="1096" fill="#9C9CA8" font-size="13" font-weight="400" text-anchor="start">The emulator showed 0.2% slow UI frames with the library on during continuous scroll and the gradient. The real low-end phone showed 0.0% everywhere.</text>
+</svg>
