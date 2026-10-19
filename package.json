@@ -1,7 +1,7 @@
 {
   "name": "@rbayuokt/expo-adaptive-status-bar",
   "version": "0.1.0",
-  "description": "Status bar icons that follow the content underneath them. Native sampling on Android and iOS picks light or dark icons for whatever is behind the status bar, with no per-screen setup.",
+  "description": "Status bar that picks its own style automatically. Native light/dark detection for Expo and React Native on iOS and Android.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -27,7 +27,7 @@
     "expo-modules",
     "status bar",
     "statusbar",
-    "status bar style",
+    "status-bar-style",
     "adaptive",
     "edge-to-edge",
     "luminance",
