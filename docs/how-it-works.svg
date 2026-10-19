@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950" font-family="-apple-system, 'SF Pro Display', Inter, Helvetica, Arial, sans-serif">
+<rect width="1600" height="950" fill="#0B0B0F"/>
+<text x="48" y="64" fill="#7C8CFF" font-size="13" font-weight="700" text-anchor="start" letter-spacing="2.4">UNDER THE HOOD</text>
+<text x="48" y="104" fill="#F4F4F6" font-size="34" font-weight="800" text-anchor="start" letter-spacing="-0.8">One sample, from a drawn frame to the icons</text>
+<text x="48" y="136" fill="#9C9CA8" font-size="16" font-weight="400" text-anchor="start">All of it runs in Swift and Kotlin. JavaScript sends the config once and only hears back when the style changes.</text>
+<rect x="48" y="180" width="234" height="210" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="78" cy="212" r="13" fill="#1E1E27" stroke="rgba(255,255,255,0.08)"/>
+<text x="78" y="217" fill="#FFB547" font-size="13" font-weight="700" text-anchor="middle">1</text>
+<text x="100" y="217" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">SIGNAL</text>
+<text x="68" y="258" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Something drew</text>
+<text x="68" y="290" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Android: OnDrawListener,</text>
+<text x="68" y="311" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">once per drawn frame.</text>
+<text x="68" y="332" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">iOS: a run loop turn that</text>
+<text x="68" y="353" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">did work, or a touch.</text>
+<path d="M284 285 H292" stroke="#5E5E6A" stroke-width="2" fill="none"/>
+<path d="M291 280 L300 285 L291 290" stroke="#5E5E6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="302" y="180" width="234" height="210" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="332" cy="212" r="13" fill="#1E1E27" stroke="rgba(255,255,255,0.08)"/>
+<text x="332" y="217" fill="#FFB547" font-size="13" font-weight="700" text-anchor="middle">2</text>
+<text x="354" y="217" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">SCHEDULE</text>
+<text x="322" y="258" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Sample now or wait</text>
+<text x="322" y="290" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">100 ms while it changes,</text>
+<text x="322" y="311" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">backing off to 300 then</text>
+<text x="322" y="332" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">900 ms while it doesn't.</text>
+<text x="322" y="353" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">One sample in flight.</text>
+<path d="M538 285 H546" stroke="#5E5E6A" stroke-width="2" fill="none"/>
+<path d="M545 280 L554 285 L545 290" stroke="#5E5E6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="556" y="180" width="234" height="210" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="586" cy="212" r="13" fill="#1E1E27" stroke="rgba(255,255,255,0.08)"/>
+<text x="586" y="217" fill="#FFB547" font-size="13" font-weight="700" text-anchor="middle">3</text>
+<text x="608" y="217" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">CAPTURE</text>
+<text x="576" y="258" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Copy the strip</text>
+<text x="576" y="290" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Android: PixelCopy into a</text>
+<text x="576" y="311" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">96×8 bitmap, GPU scaled.</text>
+<text x="576" y="332" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">iOS: draw only the layers</text>
+<text x="576" y="353" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">that touch the strip.</text>
+<path d="M792 285 H800" stroke="#5E5E6A" stroke-width="2" fill="none"/>
+<path d="M799 280 L808 285 L799 290" stroke="#5E5E6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="810" y="180" width="234" height="210" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="840" cy="212" r="13" fill="#1E1E27" stroke="rgba(255,255,255,0.08)"/>
+<text x="840" y="217" fill="#FFB547" font-size="13" font-weight="700" text-anchor="middle">4</text>
+<text x="862" y="217" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">MEASURE</text>
+<text x="830" y="258" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Read the icon zones</text>
+<text x="830" y="290" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Linear sRGB luminance in</text>
+<text x="830" y="311" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">the left and right zones,</text>
+<text x="830" y="332" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">combined where white and</text>
+<text x="830" y="353" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">black tie on contrast.</text>
+<path d="M1046 285 H1054" stroke="#5E5E6A" stroke-width="2" fill="none"/>
+<path d="M1053 280 L1062 285 L1053 290" stroke="#5E5E6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1064" y="180" width="234" height="210" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="1094" cy="212" r="13" fill="#1E1E27" stroke="rgba(255,255,255,0.08)"/>
+<text x="1094" y="217" fill="#FFB547" font-size="13" font-weight="700" text-anchor="middle">5</text>
+<text x="1116" y="217" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">DECIDE</text>
+<text x="1084" y="258" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Hysteresis</text>
+<text x="1084" y="290" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Dark icons from 0.58,</text>
+<text x="1084" y="311" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">white icons below 0.42.</text>
+<text x="1084" y="332" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Near a threshold, two</text>
+<text x="1084" y="353" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">readings must agree.</text>
+<path d="M1300 285 H1308" stroke="#5E5E6A" stroke-width="2" fill="none"/>
+<path d="M1307 280 L1316 285 L1307 290" stroke="#5E5E6A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1318" y="180" width="234" height="210" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<circle cx="1348" cy="212" r="13" fill="#1E1E27" stroke="rgba(255,255,255,0.08)"/>
+<text x="1348" y="217" fill="#FFB547" font-size="13" font-weight="700" text-anchor="middle">6</text>
+<text x="1370" y="217" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">APPLY</text>
+<text x="1338" y="258" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Set the icons</text>
+<text x="1338" y="290" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">override › hint › sample.</text>
+<text x="1338" y="311" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Android: insets controller.</text>
+<text x="1338" y="332" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">iOS: setStatusBarStyle.</text>
+<text x="1338" y="353" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Only when it changed.</text>
+<rect x="48" y="426" width="560" height="400" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="76" y="470" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">WHAT GETS MEASURED</text>
+<text x="76" y="500" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Only where the icons are</text>
+<defs>
+  <linearGradient id="skyIos" x1="0" x2="1"><stop offset="0" stop-color="#14121F"/><stop offset="0.55" stop-color="#4B3E7A"/><stop offset="1" stop-color="#F3E3C8"/></linearGradient>
+  <linearGradient id="skyAndroid" x1="0" x2="1"><stop offset="0" stop-color="#EDE6DA"/><stop offset="0.5" stop-color="#5E7C78"/><stop offset="1" stop-color="#14201F"/></linearGradient>
+  <linearGradient id="lum" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <clipPath id="strip0"><rect x="148" y="530" width="432" height="58" rx="18"/></clipPath><clipPath id="strip1"><rect x="148" y="602" width="432" height="58" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#strip0)">
+<rect x="148" y="530" width="432" height="58" fill="url(#skyIos)"/>
+<rect x="148" y="530" width="151.2" height="58" fill="#7C8CFF" fill-opacity="0.2"/>
+<rect x="428.8" y="530" width="151.2" height="58" fill="#FFB547" fill-opacity="0.2"/>
+<line x1="299.2" x2="299.2" y1="530" y2="588" stroke="#7C8CFF" stroke-width="2"/>
+<line x1="428.8" x2="428.8" y1="530" y2="588" stroke="#FFB547" stroke-width="2"/>
+</g>
+<rect x="148" y="530" width="432" height="58" rx="18" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<text x="178" y="564" fill="#8C8C98" font-size="14" font-weight="700" text-anchor="start">9:41</text>
+<rect x="316" y="548" width="96" height="22" rx="11" fill="#000"/>
+<rect x="518" y="553" width="26" height="12" rx="3.5" fill="none" stroke="#8C8C98" stroke-width="1.6"/><rect x="521" y="556" width="17" height="6" rx="1.5" fill="#8C8C98"/>
+<text x="76" y="564" fill="#F4F4F6" font-size="13.5" font-weight="700" text-anchor="start">iOS</text>
+<g clip-path="url(#strip1)">
+<rect x="148" y="602" width="432" height="58" fill="url(#skyAndroid)"/>
+<rect x="148" y="602" width="151.2" height="58" fill="#7C8CFF" fill-opacity="0.2"/>
+<rect x="428.8" y="602" width="151.2" height="58" fill="#FFB547" fill-opacity="0.2"/>
+<line x1="299.2" x2="299.2" y1="602" y2="660" stroke="#7C8CFF" stroke-width="2"/>
+<line x1="428.8" x2="428.8" y1="602" y2="660" stroke="#FFB547" stroke-width="2"/>
+</g>
+<rect x="148" y="602" width="432" height="58" rx="18" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+<text x="178" y="636" fill="#8C8C98" font-size="14" font-weight="700" text-anchor="start">9:41</text>
+<circle cx="230" cy="631" r="4" fill="#8C8C98"/>
+<circle cx="364" cy="631" r="10" fill="#000"/>
+<path d="M492 637 L504 625 L504 637 Z" fill="#8C8C98"/>
+<rect x="518" y="624" width="11" height="15" rx="2.5" fill="none" stroke="#8C8C98" stroke-width="1.6"/><rect x="520.5" y="629" width="6" height="7.5" rx="1" fill="#8C8C98"/>
+<text x="76" y="636" fill="#F4F4F6" font-size="13.5" font-weight="700" text-anchor="start">Android</text>
+<text x="223.6" y="686" fill="#7C8CFF" font-size="12.5" font-weight="400" text-anchor="middle">left zone, 35%</text>
+<text x="364" y="686" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="middle">ignored</text>
+<text x="364" y="703" fill="#5E5E6A" font-size="11.5" font-weight="400" text-anchor="middle">camera here</text>
+<text x="504.4" y="686" fill="#FFB547" font-size="12.5" font-weight="400" text-anchor="middle">right zone, 35%</text>
+<text x="76" y="730" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">Each zone averages linear light. The darker and the brighter zone are</text>
+<text x="76" y="751" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">combined where white and black icons get the same WCAG contrast,</text>
+<text x="76" y="772" fill="#9C9CA8" font-size="13.5" font-weight="400" text-anchor="start">so a split background picks what is safest for the worse side.</text>
+<text x="76" y="804" fill="#F4F4F6" font-size="13.5" font-weight="400" text-anchor="start">Dark-left or dark-right, both read the same: near 0.5</text>
+<rect x="628" y="426" width="440" height="400" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="656" y="470" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">DECIDE</text>
+<text x="656" y="500" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Hysteresis keeps it calm</text>
+<rect x="656" y="556" width="384" height="16" rx="8" fill="url(#lum)"/>
+<rect x="817.28" y="550" width="61.440000000000055" height="28" rx="5" fill="#FFB547" fill-opacity="0.12" stroke="#FFB547" stroke-width="1.5"/>
+<text x="817.28" y="604" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="middle" font-family="'SF Mono', Menlo, monospace">0.42</text>
+<text x="878.72" y="604" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="middle" font-family="'SF Mono', Menlo, monospace">0.58</text>
+<text x="656" y="540" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">white icons</text>
+<text x="848" y="540" fill="#FFB547" font-size="12.5" font-weight="400" text-anchor="middle">keep current</text>
+<text x="1040" y="540" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="end">dark icons</text>
+<rect x="656" y="690.4" width="384" height="19.200000000000045" fill="#FFB547" fill-opacity="0.08"/>
+<line x1="656" x2="1040" y1="760" y2="760" stroke="rgba(255,255,255,0.07)"/>
+<polyline points="656,661.6 681.6,671.2 707.2,684.4 732.8,694 758.4,700 784,696.4 809.6,703.6 835.2,707.2 860.8,713.2 886.4,720.4 912,715.6 937.6,706 963.2,697.6 988.8,692.8 1014.4000000000001,686.8 1040,678.4" fill="none" stroke="#7C8CFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="656" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="668.8000000000001" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="694.4000000000001" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="720" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="745.6" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="771.2" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="796.8000000000001" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="822.4000000000001" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="848" y="774" width="25.6" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="873.6" y="774" width="25.6" height="12" fill="#fff" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="899.2" y="774" width="25.6" height="12" fill="#fff" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="924.8000000000001" y="774" width="25.6" height="12" fill="#fff" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="950.4000000000001" y="774" width="25.6" height="12" fill="#fff" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="976" y="774" width="25.6" height="12" fill="#fff" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="1001.6000000000001" y="774" width="25.6" height="12" fill="#fff" stroke="#5E5E6A" stroke-width="1"/>
+<rect x="1027.2" y="774" width="12.799999999999955" height="12" fill="#000" stroke="#5E5E6A" stroke-width="1"/>
+<text x="1040" y="668.4" fill="#7C8CFF" font-size="12" font-weight="400" text-anchor="end">lightness</text>
+<text x="1040" y="804" fill="#9C9CA8" font-size="12" font-weight="400" text-anchor="end">icons</text>
+<text x="656" y="804" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">scrolling a slow gradient, one reading per sample</text>
+<rect x="1088" y="426" width="464" height="400" rx="20" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="1116" y="470" fill="#5E5E6A" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1.6">THREADS</text>
+<text x="1116" y="500" fill="#F4F4F6" font-size="19" font-weight="700" text-anchor="start">Who does what</text>
+<rect x="1116" y="526" width="408" height="84" rx="14" fill="#1E1E27"/>
+<rect x="1132" y="544" width="4" height="48" rx="2" fill="#5E5E6A"/>
+<text x="1152" y="556" fill="#F4F4F6" font-size="15" font-weight="700" text-anchor="start">JavaScript</text>
+<text x="1152" y="577" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">enable(config) once, on both platforms</text>
+<text x="1152" y="595" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">onStyleChange, only when the style changes</text>
+<rect x="1116" y="620" width="408" height="84" rx="14" fill="#1E1E27"/>
+<rect x="1132" y="638" width="4" height="48" rx="2" fill="#7C8CFF"/>
+<text x="1152" y="650" fill="#F4F4F6" font-size="15" font-weight="700" text-anchor="start">Main thread</text>
+<text x="1152" y="671" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">Android: schedule, request the copy, apply</text>
+<text x="1152" y="689" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">iOS: schedule, capture (about 1 ms), apply</text>
+<rect x="1116" y="714" width="408" height="84" rx="14" fill="#1E1E27"/>
+<rect x="1132" y="732" width="4" height="48" rx="2" fill="#FFB547"/>
+<text x="1152" y="744" fill="#F4F4F6" font-size="15" font-weight="700" text-anchor="start">Worker / GPU</text>
+<text x="1152" y="765" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">Android: copy on the GPU, read and analyse</text>
+<text x="1152" y="783" fill="#9C9CA8" font-size="12.5" font-weight="400" text-anchor="start">iOS: unused, UIKit layers are main thread only</text>
+<rect x="48" y="850" width="1504" height="64" rx="16" fill="#15151C" stroke="rgba(255,255,255,0.08)"/>
+<text x="76" y="889" fill="#F4F4F6" font-size="14" font-weight="700" text-anchor="start">JS → native</text>
+<text x="186" y="889" fill="#9C9CA8" font-size="14" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">enable(config) · configure · setOverride · setHint</text>
+<text x="860" y="889" fill="#F4F4F6" font-size="14" font-weight="700" text-anchor="start">native → JS</text>
+<text x="970" y="889" fill="#9C9CA8" font-size="14" font-weight="400" text-anchor="start" font-family="'SF Mono', Menlo, monospace">onStyleChange { style, source, lightness }</text>
+</svg>

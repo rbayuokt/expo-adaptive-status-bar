@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android"],
+  "apple": {
+    "modules": ["AdaptiveStatusBarModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.adaptivestatusbar.AdaptiveStatusBarModule"]
+  }
+}

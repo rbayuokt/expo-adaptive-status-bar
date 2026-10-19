@@ -1,0 +1,27 @@
+plugins {
+  id 'org.jetbrains.kotlin.jvm' version '2.1.20'
+}
+
+repositories {
+  mavenCentral()
+}
+
+kotlin {
+  jvmToolchain(17)
+}
+
+sourceSets {
+  main.kotlin.srcDirs = ['../src/main/java/expo/modules/adaptivestatusbar/core']
+  test.kotlin.srcDirs = ['../src/test/java/expo/modules/adaptivestatusbar/core']
+}
+
+dependencies {
+  testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+  testLogging {
+    events 'failed'
+    exceptionFormat 'full'
+  }
+}

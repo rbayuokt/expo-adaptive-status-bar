@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Adaptive Status Bar",
+    "slug": "expo-adaptive-status-bar-example",
+    "version": "1.0.0",
+    "scheme": "adaptivestatusbar",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "expo.modules.adaptivestatusbar.example"
+    },
+    "android": {
+      "package": "expo.modules.adaptivestatusbar.example",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0B0F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      "expo-video",
+      "expo-font",
+      "../app.plugin.js"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
