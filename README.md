@@ -56,7 +56,7 @@ that phone and 185 to 197 ms on iOS, and 0 samples per second on a still Android
 
 ## Install
 
-The package isn't on npm yet. Once it is, in an Expo project:
+In an Expo project:
 
 ```bash
 npx expo install @rbayuokt/expo-adaptive-status-bar@latest
