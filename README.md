@@ -4,6 +4,9 @@
 
 # @rbayuokt/expo-adaptive-status-bar
 
+Status bar that picks its own style automatically. Native light/dark detection for Expo and
+React Native on iOS and Android.
+
 <p align="center">
   <a href="docs/demo.mp4"><img src="docs/demo.gif" alt="One-minute demo on the Android emulator and the iOS simulator side by side: swiping dark and light photos, scrolling a feed, an animated sky and pushing dark and light screens, each flipping the status bar icons between white and dark with no style set by the screen, then the benchmark running with the library off and on, sped up about 4x, and its results." width="100%" /></a>
   <br />
