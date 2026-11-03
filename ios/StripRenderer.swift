@@ -23,7 +23,7 @@ enum StripRenderer {
     let kind = kind(of: layer, hasSublayers: hasSublayers)
     guard kind != .leaf else {
       // Sublayers can overflow an unclipped parent, so only clipped leaves are culled whole.
-      if hits || (hasSublayers && !layer.masksToBounds) {
+      if !isSignedDistanceField(layer) && (hits || (hasSublayers && !layer.masksToBounds)) {
         ctx.saveGState()
         ctx.concatenate(toRoot)
         layer.render(in: ctx)
@@ -187,6 +187,21 @@ enum StripRenderer {
 
   /// Main thread only, like the rest of the sampler.
   private static var selfDrawingClasses: [ObjectIdentifier: Bool] = [:]
+
+  /// Liquid Glass (iOS 26+) draws its shapes with `CASDFLayer`s. `render(in:)` can't draw them and
+  /// fills the whole bitmap with black instead, so one glass button anywhere on screen made every
+  /// sample read black. Glass is translucent, so skipping it reads the content behind it.
+  private static func isSignedDistanceField(_ layer: CALayer) -> Bool {
+    let cls: AnyClass = type(of: layer)
+    let id = ObjectIdentifier(cls)
+    if let known = signedDistanceFieldClasses[id] { return known }
+    let signedDistanceField = NSStringFromClass(cls).hasPrefix("CASDF")
+    signedDistanceFieldClasses[id] = signedDistanceField
+    return signedDistanceField
+  }
+
+  /// Main thread only, like the rest of the sampler.
+  private static var signedDistanceFieldClasses: [ObjectIdentifier: Bool] = [:]
 
   private static func visible(_ layer: CALayer) -> Bool {
     !layer.isHidden && layer.opacity > 0.01
