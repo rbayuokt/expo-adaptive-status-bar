@@ -22,6 +22,19 @@ enum StripRenderer {
 
     let kind = kind(of: layer, hasSublayers: hasSublayers)
     guard kind != .leaf else {
+      if isSignedDistanceField(layer) {
+        // Tinted glass covers what's behind it, so paint the tint. Untinted glass shows the
+        // content behind it, which the walk already draws.
+        if hits, let tint = glassTint(of: layer) {
+          ctx.saveGState()
+          ctx.concatenate(toRoot)
+          ctx.addPath(shape(layer, bounds))
+          ctx.setFillColor(tint)
+          ctx.fillPath()
+          ctx.restoreGState()
+        }
+        return
+      }
       // Sublayers can overflow an unclipped parent, so only clipped leaves are culled whole.
       if hits || (hasSublayers && !layer.masksToBounds) {
         ctx.saveGState()
@@ -187,6 +200,37 @@ enum StripRenderer {
 
   /// Main thread only, like the rest of the sampler.
   private static var selfDrawingClasses: [ObjectIdentifier: Bool] = [:]
+
+  /// Liquid Glass (iOS 26+) draws its shapes with `CASDFLayer`s. `render(in:)` can't draw them and
+  /// fills the whole bitmap with black instead, so one glass button anywhere on screen made every
+  /// sample read black. They're never rendered, only approximated by their tint.
+  private static func isSignedDistanceField(_ layer: CALayer) -> Bool {
+    let cls: AnyClass = type(of: layer)
+    let id = ObjectIdentifier(cls)
+    if let known = signedDistanceFieldClasses[id] { return known }
+    let signedDistanceField = NSStringFromClass(cls).hasPrefix("CASDF")
+    signedDistanceFieldClasses[id] = signedDistanceField
+    return signedDistanceField
+  }
+
+  /// Tint of the `UIGlassEffect` hosting an SDF layer, nil for untinted glass or glass not
+  /// backed by a `UIVisualEffectView`. Only reads properties, no layer or view is touched.
+  private static func glassTint(of layer: CALayer) -> CGColor? {
+    guard #available(iOS 26.0, *) else { return nil }
+    var current: CALayer? = layer
+    while let l = current, !(l.delegate is UIView) { current = l.superlayer }
+    var view = current?.delegate as? UIView
+    while let v = view {
+      if let effectView = v as? UIVisualEffectView {
+        return (effectView.effect as? UIGlassEffect)?.tintColor?.resolvedColor(with: effectView.traitCollection).cgColor
+      }
+      view = v.superview
+    }
+    return nil
+  }
+
+  /// Main thread only, like the rest of the sampler.
+  private static var signedDistanceFieldClasses: [ObjectIdentifier: Bool] = [:]
 
   private static func visible(_ layer: CALayer) -> Bool {
     !layer.isHidden && layer.opacity > 0.01
